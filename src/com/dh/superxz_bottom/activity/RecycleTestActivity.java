@@ -1,7 +1,6 @@
 package com.dh.superxz_bottom.activity;
 
 import android.app.Activity;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -16,7 +15,6 @@ import com.dh.superxz_bottom.R;
 import com.dh.superxz_bottom.framework.log.L;
 import com.dh.superxz_bottom.xutils.view.ViewUtils;
 import com.dh.superxz_bottom.xutils.view.annotation.ViewInject;
-
 
 import java.util.ArrayList;
 import java.util.List;

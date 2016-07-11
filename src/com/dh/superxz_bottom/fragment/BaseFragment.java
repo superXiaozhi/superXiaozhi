@@ -23,23 +23,22 @@ public class BaseFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
+        try {
+            mListener = (OnFragmentInteractionListener) activity;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(activity.toString() + " must implement BackHandledInterface");
+        }
     }
 
     public void onButtonPressed(String uri) {
-        if(null==mListener){
-            mListener=new OnFragmentInteractionListener() {
-                @Override
-                public void onFragmentInteraction(String uri) {
-
-                }
-            };
+        if (null != mListener) {
+            mListener.onFragmentInteraction(uri);
         }
-        mListener.onFragmentInteraction(uri);
+
     }
 
     @Override
     public void onClick(View v) {
-
     }
 
 

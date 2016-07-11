@@ -9,7 +9,6 @@ import android.support.v4.app.FragmentTransaction;
 import com.dh.superxz_bottom.R;
 
 
-
 public class MainActivity1 extends FragmentActivity implements BaseFragment.OnFragmentInteractionListener, BackHandledFragment.BackHandledInterface {
 
     public FragmentManager mFragmentManager;
