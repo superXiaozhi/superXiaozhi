@@ -1,16 +1,11 @@
 package com.dh.superxz_bottom.fragment;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
 import android.content.Context;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.dh.superxz_bottom.R;
 import com.dh.superxz_bottom.VehicleApp;
@@ -29,8 +24,11 @@ import com.dh.superxz_bottom.framework.net.fgview.Response.ErrorMsg;
 import com.dh.superxz_bottom.xutils.sample.utils.Preference;
 import com.dh.superxz_bottom.xutils.sample.utils.ToastUtil;
 import com.dh.superxz_bottom.xutils.view.ViewUtils;
-import com.dh.superxz_bottom.xutils.view.annotation.ViewInject;
 import com.dh.superxz_bottom.yinzldemo.VehicleFragment;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * @author 超级小志
@@ -41,8 +39,7 @@ public class HttpFragment extends VehicleFragment {
 	// private HttpHandler handler;
 
 	private Context mAppContext;
-	@ViewInject(R.id.tv_test)
-	private TextView tv;
+
 	private AfeiDb afeiDb;
 
 	@Override
@@ -83,7 +80,7 @@ public class HttpFragment extends VehicleFragment {
 		}
 		listtemp = afeiDb.findAllByWhereStr(HrVOBean.class, " sub_id = '2'");
 		temp += "查询sub id =2的数据" + listtemp.get(0).toString();
-		tv.setText(temp);
+	
 	}
 
 	private void queryCouponListByOrderId(boolean dialog) {

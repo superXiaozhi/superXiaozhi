@@ -1,9 +1,5 @@
 package com.dh.superxz_bottom.yinzldemo;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -26,6 +22,10 @@ import com.dh.superxz_bottom.framework.net.fgview.Response;
 import com.dh.superxz_bottom.framework.net.fgview.Response.ErrorMsg;
 import com.dh.superxz_bottom.xutils.sample.utils.ToastUtil;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 public class MainActivity extends Activity {
 	private TextView tv;
 	private AfeiDb afeiDb;
@@ -34,7 +34,6 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		tv = (TextView) findViewById(R.id.tv_test);
 		queryCouponListByOrderId(true);
 		// 存入用户名及密码
 		afeiDb = VehicleApp.getInstance().getAfeiDb();
