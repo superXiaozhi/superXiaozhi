@@ -5,11 +5,11 @@
     android:layout_height="fill_parent"
     tools:context="com.pro.PhotoViewActivity" >
 
-    <com.dh.superxz_bottom.view.photoview.HackyViewPager
+    <com.fuyunxing.pad.view.photoview.HackyViewPager
         android:id="@+id/viewpager"
         android:layout_width="fill_parent"
         android:background="#ffffff"
         android:layout_height="fill_parent" >
-    </com.dh.superxz_bottom.view.photoview.HackyViewPager>
+    </com.fuyunxing.pad.view.photoview.HackyViewPager>
 
 </RelativeLayout>

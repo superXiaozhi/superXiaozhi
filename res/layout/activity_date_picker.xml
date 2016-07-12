@@ -17,12 +17,12 @@
         android:gravity="center"
         android:orientation="horizontal" >
 
-        <com.dh.superxz_bottom.dhutils.datepicker.DatePicker
+        <com.fuyunxing.pad.dhutils.datepicker.DatePicker
             android:id="@+id/datePicker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <com.dh.superxz_bottom.dhutils.datepicker.TimePicker
+        <com.fuyunxing.pad.dhutils.datepicker.TimePicker
             android:id="@+id/timePicker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

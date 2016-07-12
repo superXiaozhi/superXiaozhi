@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.dh.superxz_bottom"
+    package="com.fuyunxing.pad"
     android:versionCode="1"
     android:versionName="1.0">
 
@@ -15,45 +15,45 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:name=".VehicleApp"
+        android:name="com.fuyunxing.pad.VehicleApp"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name">
         <activity
-            android:name=".yinzldemo.FragmentTabActivity2"
+            android:name="com.fuyunxing.pad.yinzldemo.FragmentTabActivity2"
             android:label="@string/app_name"
             android:theme="@style/NoSwipeActivityTheme"></activity>
         <activity
-            android:name=".yinzldemo.EventBusActivity"
+            android:name="com.fuyunxing.pad.yinzldemo.EventBusActivity"
             android:label="@string/app_name"
             android:theme="@style/SwipeActivityTheme" />
         <activity
-            android:name=".yinzldemo.DatePickerActivity"
+            android:name="com.fuyunxing.pad.yinzldemo.DatePickerActivity"
             android:label="@string/app_name"
             android:theme="@style/SwipeActivityTheme" />
         <!-- 关于 -->
         <activity
-            android:name=".activity.AboutActivity"
+            android:name="com.fuyunxing.pad.activity.AboutActivity"
             android:label="@string/app_name"
             android:theme="@style/SwipeActivityTheme" />
         <activity
-            android:name=".activity.LoginActivity"
+            android:name="com.fuyunxing.pad.activity.LoginActivity"
             android:label="@string/app_name"
             android:theme="@style/NoSwipeActivityTheme" />
         <activity
-            android:name=".activity.ForgetActivity"
+            android:name="com.fuyunxing.pad.activity.ForgetActivity"
             android:label="@string/app_name"
             android:theme="@style/SwipeActivityTheme" />
         <activity
-            android:name=".activity.RegisterActivity"
+            android:name="com.fuyunxing.pad.activity.RegisterActivity"
             android:label="@string/app_name"
             android:theme="@style/SwipeActivityTheme" />
         <activity
-            android:name=".yinzldemo.PhotoViewActivity"
+            android:name="com.fuyunxing.pad.yinzldemo.PhotoViewActivity"
             android:label="@string/app_name"
             android:theme="@style/SwipeActivityTheme" />
         <activity
-            android:name=".activity.AllActivity"
+            android:name="com.fuyunxing.pad.activity.AllActivity"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar">
            <!-- <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -62,7 +62,7 @@
             </intent-filter>-->
         </activity>
         <activity
-            android:name=".activity.HomeActivity"
+            android:name="com.fuyunxing.pad.activity.HomeActivity"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
             <intent-filter>
@@ -71,7 +71,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.RecycleTestActivity"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+        <activity android:name="com.fuyunxing.pad.activity.RecycleTestActivity"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
 
     </application>

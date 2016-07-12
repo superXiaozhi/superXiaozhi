@@ -16,7 +16,7 @@
         android:src="@drawable/default_photo"
         android:visibility="gone" />
 
-    <com.dh.superxz_bottom.view.CircleImageView
+    <com.fuyunxing.pad.view.CircleImageView
         android:id="@+id/civ_icon"
         android:layout_width="48dp"
         android:layout_height="48dp"
