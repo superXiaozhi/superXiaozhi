@@ -62,8 +62,9 @@
             </intent-filter>-->
         </activity>
         <activity
-            android:name=".fragment.MainActivity1"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
