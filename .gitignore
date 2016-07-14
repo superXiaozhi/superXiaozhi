@@ -38,3 +38,8 @@ captures/
 
 # Keystore files
 *.jks
+res/layout/group1.xml
+res/layout/view1.xml
+res/layout/view2.xml
+/build/
+/.idea/
