@@ -13,6 +13,7 @@ import com.fuyunxing.pad.fragment.FragmentA;
 import com.fuyunxing.pad.fragment.FragmentB;
 import com.fuyunxing.pad.fragment.FragmentC;
 import com.fuyunxing.pad.fragment.FragmentD;
+import com.fuyunxing.pad.fragment.FragmentHelp;
 
 
 public class HomeActivity extends FragmentActivity implements BaseFragment.OnFragmentInteractionListener, BackHandledFragment.BackHandledInterface {
@@ -31,7 +32,7 @@ public class HomeActivity extends FragmentActivity implements BaseFragment.OnFra
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        addFragmentContent(FragmentA.newInstance("", ""));
+        addFragmentContent(FragmentHelp.newInstance("", ""));
 
     }
 
