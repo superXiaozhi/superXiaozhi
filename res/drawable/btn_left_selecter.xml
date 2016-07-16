@@ -1,17 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item android:state_focused="true">
-        <bitmap android:src="@drawable/icon_left_btn_d" />
-    </item>
-    <item android:state_pressed="true">
-        <bitmap android:src="@drawable/icon_left_btn_d" />
-    </item>
-    <item android:state_focused="false" android:state_pressed="false">
-        <bitmap android:src="@drawable/icon_left_btn_n" />
-    </item>
-    <item>
-        <bitmap android:src="@drawable/icon_left_btn_n" />
-    </item>
-
+    <item android:state_pressed="true" android:drawable="@drawable/icon_left_btn_d"/>
+    <item android:state_selected="true" android:drawable="@drawable/icon_left_btn_d"/>
+    <item android:state_enabled="true" android:drawable="@drawable/icon_left_btn_n"/>
 </selector>

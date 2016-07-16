@@ -5,6 +5,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.view.View;
+import android.widget.TextView;
 
 import com.fuyunxing.pad.R;
 import com.fuyunxing.pad.fragment.BackHandledFragment;
@@ -14,9 +16,11 @@ import com.fuyunxing.pad.fragment.FragmentB;
 import com.fuyunxing.pad.fragment.FragmentC;
 import com.fuyunxing.pad.fragment.FragmentD;
 import com.fuyunxing.pad.fragment.FragmentHelp;
+import com.fuyunxing.pad.fragment.FragmentHome;
+import com.fuyunxing.pad.fragment.FragmentHos;
 
 
-public class HomeActivity extends FragmentActivity implements BaseFragment.OnFragmentInteractionListener, BackHandledFragment.BackHandledInterface {
+public class HomeActivity extends FragmentActivity implements  BaseFragment.OnFragmentInteractionListener, BackHandledFragment.BackHandledInterface {
 
     public FragmentManager mFragmentManager;
 
@@ -26,15 +30,44 @@ public class HomeActivity extends FragmentActivity implements BaseFragment.OnFra
     public final static String CTOD = "ctod";
     public final static String DTOA = "dtoa";
 
+
+    public final static String FRAGMENT_HOME_YYXX = "fragmet_yyxx";//主页的医院信息
+    public final static String FRAGMENT_HOME_PERSONMSG = "fragmet_personmsg";//主页病人信息
+
+
+    public final static String FRAGMENT_HOME_HOME = "fragmet_home";//主页
+    public final static String FRAGMENT_HOME_HELP = "fragmet_help";//帮助
+    public final static String FRAGMENT_HOME_SETTING = "fragmet_setting";//设置
+
     private BackHandledFragment mBackHandedFragment;
+    private TextView tv_home_home;
+    private TextView tv_home_setting;
+    private TextView tv_home_help;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        addFragmentContent(FragmentHelp.newInstance("", ""));
+        addFragmentContent(FragmentHome.newInstance("", ""));
+        tv_home_home = (TextView) findViewById(R.id.tv_home_home);
+        tv_home_setting = (TextView) findViewById(R.id.tv_home_setting);
+        tv_home_help = (TextView) findViewById(R.id.tv_home_help);
+        tv_home_home.setOnClickListener(new View.OnClickListener() {
 
+            @Override
+            public void onClick(View v) {
+                addFragmentContent(FragmentHome.newInstance("", ""));
+            }
+        });
+        tv_home_help.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                addFragmentContent(FragmentHelp.newInstance("", ""));
+            }
+        });
     }
+
 
     private void addFragmentContent(Fragment paramFragment) {
 
@@ -87,7 +120,11 @@ public class HomeActivity extends FragmentActivity implements BaseFragment.OnFra
             addFragmentContent(FragmentD.newInstance("", ""));
         } else if (DTOA.equals(intent)) {
             addFragmentContent(FragmentA.newInstance("", ""));
+        } else if (FRAGMENT_HOME_YYXX.equals(intent)) {
+            addFragmentContent(FragmentHos.newInstance("", ""));
         }
+
+
     }
 
     // CLEAR BACK STACK.

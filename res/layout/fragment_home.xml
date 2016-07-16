@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_yyxx"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_left_yyxx" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_home_item_bg"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="娱乐服务"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_amuse_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/btn_amuse_tv"
+                    android:gravity="center"
+                    android:text="电视"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_amuse_movie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/btn_amuse_movie"
+                    android:gravity="center"
+                    android:text="电影"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_amuse_music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/btn_amuse_music"
+                    android:gravity="center"
+                    android:text="音乐"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_amuse_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/btn_amuse_news"
+                    android:gravity="center"
+                    android:text="新闻"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_amuse_ts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/btn_amuse_ts"
+                    android:gravity="center"
+                    android:text="听书"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_amuse_game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/btn_amuse_game"
+                    android:gravity="center"
+                    android:text="游戏"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_call"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_left_call" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_home_item_bg"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生活服务"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_life_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/btn_life_view"
+                    android:gravity="center"
+                    android:text="远程探视"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_life_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/btn_life_shop"
+                    android:gravity="center"
+                    android:text="购物"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_life_food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/btn_life_food"
+                    android:gravity="center"
+                    android:text="订餐"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_life_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/btn_life_test"
+                    android:gravity="center"
+                    android:text="测试"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_life_huli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/btn_life_huli"
+                    android:gravity="center"
+                    android:text="护理"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_life_qt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/btn_life_qt"
+                    android:gravity="center"
+                    android:text="其他"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_person"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_left_person" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_home_item_bg"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="福心健康"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_health_ask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/btn_health_ask"
+                    android:gravity="center"
+                    android:text="健康咨询"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_health_ly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/btn_health_ly"
+                    android:gravity="center"
+                    android:text="家人留言"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_health_ga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/btn_health_ga"
+                    android:gravity="center"
+                    android:text="亲人关爱"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_health_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/btn_health_share"
+                    android:gravity="center"
+                    android:text="病友交流"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_health_js"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/btn_health_js"
+                    android:gravity="center"
+                    android:text="福心介绍"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_health_qt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/btn_health_qt"
+                    android:gravity="center"
+                    android:text="其他"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

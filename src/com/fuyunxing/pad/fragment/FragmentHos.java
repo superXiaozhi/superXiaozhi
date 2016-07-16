@@ -22,22 +22,23 @@ import com.fuyunxing.pad.constant.Constant;
  * Date: 2015-03-20
  * Time: 15:18
  */
-public class FragmentHelp extends BackHandledFragment implements View.OnClickListener {
+public class FragmentHos extends BackHandledFragment implements View.OnClickListener {
     private WebView webview_pub;
-    private Button btn_sybz;
-    private Button btn_ywwt;
-    private Button btn_zxbz;
-    private Button btn_qt;
-    private Button btn_tab5;
+    private Button btn_yyjj;
+    private Button btn_ksjs;
+    private Button btn_msmy;
+    private Button btn_zyzn;
+    private Button btn_cyzn;
     private String title;
-
-    private String URL_SYBZ = Constant.UrlIp + "flat/html/hospital/introduction.html";
-
-    private String webUrl = URL_SYBZ;
-
+    private String webUrl = "https://www.baidu.com/";
+    private String URL_YYJJ = Constant.UrlIp + "flat/html/hospital/introduction.html";
+    private String URL_KSJS = Constant.UrlIp + "flat/html/hospital/department.html";
+    private String URL_MYMS = Constant.UrlIp + "flat/html/hospital/doctor.html";
+    private String URL_ZYZN = Constant.UrlIp + "flat/html/hospital/hospitalguide.html";
+    private String URL_CYZN = Constant.UrlIp + "flat/html/hospital/dischargeguide.html";
     // TODO: Rename and change types and number of parameters
-    public static FragmentHelp newInstance(String param1, String param2) {
-        FragmentHelp fragment = new FragmentHelp();
+    public static FragmentHos newInstance(String param1, String param2) {
+        FragmentHos fragment = new FragmentHos();
         Bundle args = new Bundle();
 //        args.putString(ARG_PARAM1, param1);
 //        args.putString(ARG_PARAM2, param2);
@@ -47,17 +48,17 @@ public class FragmentHelp extends BackHandledFragment implements View.OnClickLis
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_help, container, false);
-        btn_sybz = (Button) view.findViewById(R.id.btn_sybz);
-        btn_ywwt = (Button) view.findViewById(R.id.btn_ywwt);
-        btn_zxbz = (Button) view.findViewById(R.id.btn_zxbz);
-        btn_qt = (Button) view.findViewById(R.id.btn_qt);
-        btn_tab5 = (Button) view.findViewById(R.id.btn_tab5);
-        btn_sybz.setOnClickListener(this);
-        btn_ywwt.setOnClickListener(this);
-        btn_zxbz.setOnClickListener(this);
-        btn_qt.setOnClickListener(this);
-        btn_tab5.setOnClickListener(this);
+        View view = inflater.inflate(R.layout.fragment_hos, container, false);
+        btn_yyjj = (Button) view.findViewById(R.id.btn_yyjj);
+        btn_ksjs = (Button) view.findViewById(R.id.btn_ksjs);
+        btn_msmy = (Button) view.findViewById(R.id.btn_msmy);
+        btn_zyzn = (Button) view.findViewById(R.id.btn_zyzn);
+        btn_cyzn = (Button) view.findViewById(R.id.btn_cyzn);
+        btn_yyjj.setOnClickListener(this);
+        btn_ksjs.setOnClickListener(this);
+        btn_msmy.setOnClickListener(this);
+        btn_zyzn.setOnClickListener(this);
+        btn_cyzn.setOnClickListener(this);
         webview_pub = (WebView) view.findViewById(R.id.webview_pub);
         // 设置WebView属性，能够执行Javascript脚本
         webview_pub.getSettings().setJavaScriptEnabled(true);
@@ -69,11 +70,11 @@ public class FragmentHelp extends BackHandledFragment implements View.OnClickLis
     }
 
     private void setselecter(Button btn) {
-        btn_sybz.setSelected(false);
-        btn_ywwt.setSelected(false);
-        btn_zxbz.setSelected(false);
-        btn_qt.setSelected(false);
-        btn_tab5.setSelected(false);
+        btn_yyjj.setSelected(false);
+        btn_ksjs.setSelected(false);
+        btn_msmy.setSelected(false);
+        btn_zyzn.setSelected(false);
+        btn_cyzn.setSelected(false);
         btn.setSelected(true);
     }
 
@@ -97,19 +98,29 @@ public class FragmentHelp extends BackHandledFragment implements View.OnClickLis
     public void onClick(View v) {
         super.onClick(v);
         switch (v.getId()) {
-            case R.id.btn_sybz:
-                setselecter(btn_sybz);
-                webUrl = "http://sports.sina.com.cn/";
+            case R.id.btn_yyjj:
+                setselecter(btn_yyjj);
+                webUrl = URL_YYJJ;
                 showWebView();
                 break;
-            case R.id.btn_ywwt:
-                setselecter(btn_ywwt);
-                webUrl = "http://2016.sina.com.cn/";
+            case R.id.btn_ksjs:
+                setselecter(btn_ksjs);
+                webUrl = URL_KSJS;
                 showWebView();
                 break;
-            case R.id.btn_zxbz:
-                setselecter(btn_zxbz);
-                webUrl = "https://www.tmall.com/";
+            case R.id.btn_msmy:
+                setselecter(btn_msmy);
+                webUrl = URL_MYMS;
+                showWebView();
+                break;
+            case R.id.btn_zyzn:
+                setselecter(btn_zyzn);
+                webUrl = URL_ZYZN;
+                showWebView();
+                break;
+            case R.id.btn_cyzn:
+                setselecter(btn_cyzn);
+                webUrl =URL_CYZN;
                 showWebView();
                 break;
         }
