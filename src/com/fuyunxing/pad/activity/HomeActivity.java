@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.fuyunxing.pad.R;
@@ -18,9 +19,10 @@ import com.fuyunxing.pad.fragment.FragmentD;
 import com.fuyunxing.pad.fragment.FragmentHelp;
 import com.fuyunxing.pad.fragment.FragmentHome;
 import com.fuyunxing.pad.fragment.FragmentHos;
+import com.fuyunxing.pad.fragment.FragmentLogin;
 
 
-public class HomeActivity extends FragmentActivity implements  BaseFragment.OnFragmentInteractionListener, BackHandledFragment.BackHandledInterface {
+public class HomeActivity extends FragmentActivity implements BaseFragment.OnFragmentInteractionListener, BackHandledFragment.BackHandledInterface {
 
     public FragmentManager mFragmentManager;
 
@@ -39,10 +41,13 @@ public class HomeActivity extends FragmentActivity implements  BaseFragment.OnFr
     public final static String FRAGMENT_HOME_HELP = "fragmet_help";//帮助
     public final static String FRAGMENT_HOME_SETTING = "fragmet_setting";//设置
 
+    public final static String FRAGMENT_HOME_LOGIN = "fragmet_login";//主页的医院信息
+
     private BackHandledFragment mBackHandedFragment;
     private TextView tv_home_home;
     private TextView tv_home_setting;
     private TextView tv_home_help;
+    private Button btn_login;//登录
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +57,14 @@ public class HomeActivity extends FragmentActivity implements  BaseFragment.OnFr
         tv_home_home = (TextView) findViewById(R.id.tv_home_home);
         tv_home_setting = (TextView) findViewById(R.id.tv_home_setting);
         tv_home_help = (TextView) findViewById(R.id.tv_home_help);
+        btn_login = (Button) findViewById(R.id.btn_login);
+        btn_login.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                addFragmentContent(FragmentLogin.newInstance("", ""));
+            }
+        });
         tv_home_home.setOnClickListener(new View.OnClickListener() {
 
             @Override

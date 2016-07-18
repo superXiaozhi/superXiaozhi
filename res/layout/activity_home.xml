@@ -127,6 +127,7 @@
                 android:text="主页"
                 android:textColor="#ffffff"
                 android:textSize="12sp" />
+
             <TextView
                 android:id="@+id/tv_home_help"
                 android:layout_width="50dp"
@@ -143,6 +144,32 @@
                 android:text="帮助"
                 android:textColor="#ffffff"
                 android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/tv_home_help"
+                android:background="@drawable/btn_login"
+                android:gravity="center"
+                android:text="登 录"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/btn_login"
+                android:background="@drawable/btn_login"
+                android:gravity="center"
+                android:text="注 册"
+                android:textColor="#ffffff" />
         </RelativeLayout>
 
 
