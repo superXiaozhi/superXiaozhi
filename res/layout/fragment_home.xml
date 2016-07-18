@@ -3,35 +3,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:paddingBottom="34px"
+    android:paddingLeft="40px"
+    android:paddingRight="40px"
+    android:paddingTop="34px">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="7px"
         android:layout_weight="1"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/btn_yyxx"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@drawable/btn_left_yyxx" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="30px"
             android:background="@drawable/icon_home_item_bg"
             android:orientation="vertical"
-            android:padding="10dp">
+
+            >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="34px"
+                android:layout_marginTop="20px"
                 android:text="娱乐服务"
-                android:textSize="12sp" />
+                android:textColor="#000000"
+                android:textSize="20px" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -49,7 +56,8 @@
                     android:drawableTop="@drawable/btn_amuse_tv"
                     android:gravity="center"
                     android:text="电视"
-                    android:textSize="12sp" />
+                    android:textColor="#3b3b3b"
+                    android:textSize="18px" />
 
                 <TextView
                     android:id="@+id/tv_amuse_movie"
@@ -61,7 +69,8 @@
                     android:drawableTop="@drawable/btn_amuse_movie"
                     android:gravity="center"
                     android:text="电影"
-                    android:textSize="12sp" />
+                    android:textColor="#3b3b3b"
+                    android:textSize="18px" />
 
                 <TextView
                     android:id="@+id/tv_amuse_music"
@@ -73,7 +82,8 @@
                     android:drawableTop="@drawable/btn_amuse_music"
                     android:gravity="center"
                     android:text="音乐"
-                    android:textSize="12sp" />
+                    android:textColor="#3b3b3b"
+                    android:textSize="18px" />
 
                 <TextView
                     android:id="@+id/tv_amuse_news"
@@ -85,7 +95,8 @@
                     android:drawableTop="@drawable/btn_amuse_news"
                     android:gravity="center"
                     android:text="新闻"
-                    android:textSize="12sp" />
+                    android:textColor="#3b3b3b"
+                    android:textSize="18px" />
 
                 <TextView
                     android:id="@+id/tv_amuse_ts"
@@ -97,7 +108,8 @@
                     android:drawableTop="@drawable/btn_amuse_ts"
                     android:gravity="center"
                     android:text="听书"
-                    android:textSize="12sp" />
+                    android:textColor="#3b3b3b"
+                    android:textSize="18px" />
 
                 <TextView
                     android:id="@+id/tv_amuse_game"
@@ -109,7 +121,8 @@
                     android:drawableTop="@drawable/btn_amuse_game"
                     android:gravity="center"
                     android:text="游戏"
-                    android:textSize="12sp" />
+                    android:textColor="#3b3b3b"
+                    android:textSize="18px" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -117,31 +130,33 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginBottom="7px"
+        android:layout_marginTop="7px"
         android:layout_weight="1"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/btn_call"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@drawable/btn_left_call" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="30px"
             android:background="@drawable/icon_home_item_bg"
-            android:orientation="vertical"
-            android:padding="10dp">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="34px"
+                android:layout_marginTop="20px"
                 android:text="生活服务"
-                android:textSize="12sp" />
+                android:textColor="#000000"
+                android:textSize="20px" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -159,7 +174,8 @@
                     android:drawableTop="@drawable/btn_life_view"
                     android:gravity="center"
                     android:text="远程探视"
-                    android:textSize="12sp" />
+                    android:textColor="#3b3b3b"
+                    android:textSize="18px" />
 
                 <TextView
                     android:id="@+id/tv_life_shop"
@@ -171,7 +187,8 @@
                     android:drawableTop="@drawable/btn_life_shop"
                     android:gravity="center"
                     android:text="购物"
-                    android:textSize="12sp" />
+                    android:textColor="#3b3b3b"
+                    android:textSize="18px" />
 
                 <TextView
                     android:id="@+id/tv_life_food"
@@ -183,7 +200,8 @@
                     android:drawableTop="@drawable/btn_life_food"
                     android:gravity="center"
                     android:text="订餐"
-                    android:textSize="12sp" />
+                    android:textColor="#3b3b3b"
+                    android:textSize="18px" />
 
                 <TextView
                     android:id="@+id/tv_life_test"
@@ -195,7 +213,8 @@
                     android:drawableTop="@drawable/btn_life_test"
                     android:gravity="center"
                     android:text="测试"
-                    android:textSize="12sp" />
+                    android:textColor="#3b3b3b"
+                    android:textSize="18px" />
 
                 <TextView
                     android:id="@+id/tv_life_huli"
@@ -207,7 +226,8 @@
                     android:drawableTop="@drawable/btn_life_huli"
                     android:gravity="center"
                     android:text="护理"
-                    android:textSize="12sp" />
+                    android:textColor="#3b3b3b"
+                    android:textSize="18px" />
 
                 <TextView
                     android:id="@+id/tv_life_qt"
@@ -219,7 +239,8 @@
                     android:drawableTop="@drawable/btn_life_qt"
                     android:gravity="center"
                     android:text="其他"
-                    android:textSize="12sp" />
+                    android:textColor="#3b3b3b"
+                    android:textSize="18px" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -227,30 +248,32 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="7px"
         android:layout_weight="1"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/btn_person"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@drawable/btn_left_person" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20px"
             android:background="@drawable/icon_home_item_bg"
-            android:orientation="vertical"
-            android:padding="10dp">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="34px"
+                android:layout_marginTop="20px"
                 android:text="福心健康"
-                android:textSize="12sp" />
+                android:textColor="#000000"
+                android:textSize="20px" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -268,7 +291,8 @@
                     android:drawableTop="@drawable/btn_health_ask"
                     android:gravity="center"
                     android:text="健康咨询"
-                    android:textSize="12sp" />
+                    android:textColor="#3b3b3b"
+                    android:textSize="18px" />
 
                 <TextView
                     android:id="@+id/tv_health_ly"
@@ -280,7 +304,8 @@
                     android:drawableTop="@drawable/btn_health_ly"
                     android:gravity="center"
                     android:text="家人留言"
-                    android:textSize="12sp" />
+                    android:textColor="#3b3b3b"
+                    android:textSize="18px" />
 
                 <TextView
                     android:id="@+id/tv_health_ga"
@@ -292,7 +317,8 @@
                     android:drawableTop="@drawable/btn_health_ga"
                     android:gravity="center"
                     android:text="亲人关爱"
-                    android:textSize="12sp" />
+                    android:textColor="#3b3b3b"
+                    android:textSize="18px" />
 
                 <TextView
                     android:id="@+id/tv_health_share"
@@ -304,7 +330,8 @@
                     android:drawableTop="@drawable/btn_health_share"
                     android:gravity="center"
                     android:text="病友交流"
-                    android:textSize="12sp" />
+                    android:textColor="#3b3b3b"
+                    android:textSize="18px" />
 
                 <TextView
                     android:id="@+id/tv_health_js"
@@ -316,7 +343,8 @@
                     android:drawableTop="@drawable/btn_health_js"
                     android:gravity="center"
                     android:text="福心介绍"
-                    android:textSize="12sp" />
+                    android:textColor="#3b3b3b"
+                    android:textSize="18px" />
 
                 <TextView
                     android:id="@+id/tv_health_qt"
@@ -328,7 +356,8 @@
                     android:drawableTop="@drawable/btn_health_qt"
                     android:gravity="center"
                     android:text="其他"
-                    android:textSize="12sp" />
+                    android:textColor="#3b3b3b"
+                    android:textSize="18px" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

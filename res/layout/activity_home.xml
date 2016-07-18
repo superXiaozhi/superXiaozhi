@@ -6,7 +6,7 @@
 
     <RelativeLayout
         android:id="@+id/rl_right"
-        android:layout_width="150dp"
+        android:layout_width="300px"
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"
         android:background="@color/blue_text"></RelativeLayout>
@@ -62,7 +62,8 @@
             </LinearLayout>
 
             <RelativeLayout
-                android:layout_width="50dp"
+                android:id="@+id/ll_person"
+                android:layout_width="169px"
                 android:layout_height="match_parent"
                 android:layout_alignParentRight="true"
                 android:background="@drawable/icon_top_person_bg"
@@ -94,20 +95,44 @@
                     android:textSize="18sp" />
             </RelativeLayout>
 
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:layout_toLeftOf="@id/ll_person"
+                android:background="@drawable/btn_login"
+                android:gravity="center"
+                android:text="注 册"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20px"
+                android:layout_toLeftOf="@id/btn_register"
+                android:background="@drawable/btn_login"
+                android:gravity="center"
+                android:text="登 录"
+                android:textColor="#ffffff" />
+
             <TextView
-                android:id="@+id/tv_home_setting"
-                android:layout_width="50dp"
+                android:id="@+id/tv_home_help"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp"
-                android:layout_toRightOf="@id/ll_weather"
+                android:layout_marginRight="40px"
+                android:layout_toLeftOf="@id/btn_login"
                 android:background="@drawable/icon_top_btn_bg"
                 android:clickable="true"
                 android:drawablePadding="5dp"
-                android:drawableTop="@drawable/btn_home_setting"
+                android:drawableTop="@drawable/btn_home_help"
                 android:gravity="center"
                 android:paddingTop="10dp"
-                android:text="设置"
+                android:text="帮助"
                 android:textColor="#ffffff"
                 android:textSize="12sp" />
 
@@ -116,8 +141,8 @@
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp"
-                android:layout_toRightOf="@id/tv_home_setting"
+                android:layout_marginRight="16px"
+                android:layout_toLeftOf="@id/tv_home_help"
                 android:background="@drawable/icon_top_btn_bg"
                 android:clickable="true"
                 android:drawablePadding="5dp"
@@ -129,47 +154,23 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/tv_home_help"
+                android:id="@+id/tv_home_setting"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp"
-                android:layout_toRightOf="@id/tv_home_home"
+                android:layout_marginRight="16px"
+                android:layout_toLeftOf="@id/tv_home_home"
                 android:background="@drawable/icon_top_btn_bg"
                 android:clickable="true"
                 android:drawablePadding="5dp"
-                android:drawableTop="@drawable/btn_home_help"
+                android:drawableTop="@drawable/btn_home_setting"
                 android:gravity="center"
                 android:paddingTop="10dp"
-                android:text="帮助"
+                android:text="设置"
                 android:textColor="#ffffff"
                 android:textSize="12sp" />
 
-            <Button
-                android:id="@+id/btn_login"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="5dp"
-                android:layout_toRightOf="@id/tv_home_help"
-                android:background="@drawable/btn_login"
-                android:gravity="center"
-                android:text="登 录"
-                android:textColor="#ffffff" />
 
-            <Button
-                android:id="@+id/btn_register"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="5dp"
-                android:layout_toRightOf="@id/btn_login"
-                android:background="@drawable/btn_login"
-                android:gravity="center"
-                android:text="注 册"
-                android:textColor="#ffffff" />
         </RelativeLayout>
 
 

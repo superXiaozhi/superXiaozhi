@@ -30,12 +30,14 @@ public class FragmentHos extends BackHandledFragment implements View.OnClickList
     private Button btn_zyzn;
     private Button btn_cyzn;
     private String title;
-    private String webUrl = "https://www.baidu.com/";
+
     private String URL_YYJJ = Constant.UrlIp + "flat/html/hospital/introduction.html";
     private String URL_KSJS = Constant.UrlIp + "flat/html/hospital/department.html";
     private String URL_MYMS = Constant.UrlIp + "flat/html/hospital/doctor.html";
     private String URL_ZYZN = Constant.UrlIp + "flat/html/hospital/hospitalguide.html";
     private String URL_CYZN = Constant.UrlIp + "flat/html/hospital/dischargeguide.html";
+    private String webUrl = URL_YYJJ;
+
     // TODO: Rename and change types and number of parameters
     public static FragmentHos newInstance(String param1, String param2) {
         FragmentHos fragment = new FragmentHos();
@@ -59,6 +61,7 @@ public class FragmentHos extends BackHandledFragment implements View.OnClickList
         btn_msmy.setOnClickListener(this);
         btn_zyzn.setOnClickListener(this);
         btn_cyzn.setOnClickListener(this);
+        setselecter(btn_yyjj);
         webview_pub = (WebView) view.findViewById(R.id.webview_pub);
         // 设置WebView属性，能够执行Javascript脚本
         webview_pub.getSettings().setJavaScriptEnabled(true);
@@ -120,7 +123,7 @@ public class FragmentHos extends BackHandledFragment implements View.OnClickList
                 break;
             case R.id.btn_cyzn:
                 setselecter(btn_cyzn);
-                webUrl =URL_CYZN;
+                webUrl = URL_CYZN;
                 showWebView();
                 break;
         }

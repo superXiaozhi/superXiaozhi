@@ -58,6 +58,7 @@ public class FragmentHelp extends BackHandledFragment implements View.OnClickLis
         btn_zxbz.setOnClickListener(this);
         btn_qt.setOnClickListener(this);
         btn_tab5.setOnClickListener(this);
+        setselecter(btn_sybz);
         webview_pub = (WebView) view.findViewById(R.id.webview_pub);
         // 设置WebView属性，能够执行Javascript脚本
         webview_pub.getSettings().setJavaScriptEnabled(true);

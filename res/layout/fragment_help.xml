@@ -1,73 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="horizontal"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
 
     <LinearLayout
         android:id="@+id/ll_left_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="86px"
         android:orientation="vertical">
 
         <Button
             android:id="@+id/btn_sybz"
-            android:layout_width="100dp"
-            android:layout_height="30dp"
+            android:layout_width="132px"
+            android:layout_height="60px"
             android:background="@drawable/btn_left_selecter"
             android:gravity="center"
             android:text="使用帮助"
-            android:textSize="16sp" />
+            android:textColor="#fff"
+            android:textSize="18px" />
 
         <Button
             android:id="@+id/btn_ywwt"
-            android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="132px"
+            android:layout_height="60px"
+            android:layout_marginTop="10px"
             android:background="@drawable/btn_left_selecter"
             android:gravity="center"
             android:text="业务问题"
-            android:textSize="16sp" />
+            android:textColor="#fff"
+            android:textSize="18px" />
 
         <Button
             android:id="@+id/btn_zxbz"
-            android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="132px"
+            android:layout_height="60px"
+            android:layout_marginTop="10px"
             android:background="@drawable/btn_left_selecter"
             android:gravity="center"
             android:text="咨询帮助"
-            android:textSize="16sp" />
+            android:textColor="#fff"
+            android:textSize="18px" />
 
         <Button
             android:id="@+id/btn_qt"
-            android:layout_width="100dp"
-            android:layout_height="30dp"
+            android:layout_width="132px"
+            android:layout_height="60px"
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_left_selecter"
             android:gravity="center"
             android:text="其他"
-            android:textSize="16sp" />
+            android:textColor="#fff"
+            android:textSize="18px" />
 
         <Button
             android:id="@+id/btn_tab5"
-            android:layout_width="100dp"
-            android:layout_height="30dp"
             android:layout_marginTop="10dp"
+            android:layout_width="132px"
+            android:layout_height="60px"
             android:background="@drawable/btn_left_selecter"
             android:gravity="center"
+            android:textColor="#fff"
             android:text="Tab5"
-            android:textSize="16sp" />
+            android:textSize="18px" />
     </LinearLayout>
 
     <WebView
         android:id="@+id/webview_pub"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
-        />
+        android:layout_marginBottom="34px"
+        android:layout_marginRight="34px"
+        android:layout_marginTop="34px" />
 </LinearLayout>

@@ -8,70 +8,70 @@
         android:id="@+id/ll_left_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="86dp"
         android:orientation="vertical">
 
         <Button
             android:id="@+id/btn_yyjj"
-            android:layout_width="100dp"
-            android:layout_height="30dp"
+            android:layout_width="132px"
+            android:layout_height="60px"
             android:background="@drawable/btn_left_selecter"
             android:gravity="center"
             android:text="医院简介"
             android:textColor="#ffffff"
-            android:textSize="16sp" />
+            android:textSize="18px" />
 
         <Button
             android:id="@+id/btn_ksjs"
-            android:layout_width="100dp"
-            android:layout_height="30dp"
+            android:layout_width="132px"
+            android:layout_height="60px"
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_left_selecter"
             android:gravity="center"
             android:text="科室介绍"
             android:textColor="#ffffff"
-            android:textSize="16sp" />
+            android:textSize="18px" />
 
         <Button
             android:id="@+id/btn_msmy"
-            android:layout_width="100dp"
-            android:layout_height="30dp"
+            android:layout_width="132px"
+            android:layout_height="60px"
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_left_selecter"
             android:gravity="center"
             android:text="名师名医"
             android:textColor="#ffffff"
-            android:textSize="16sp" />
+            android:textSize="18px" />
 
         <Button
             android:id="@+id/btn_zyzn"
-            android:layout_width="100dp"
-            android:layout_height="30dp"
+            android:layout_width="132px"
+            android:layout_height="60px"
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_left_selecter"
             android:gravity="center"
             android:text="住院指南"
             android:textColor="#ffffff"
-            android:textSize="16sp" />
+            android:textSize="18px" />
 
         <Button
             android:id="@+id/btn_cyzn"
-            android:layout_width="100dp"
-            android:layout_height="30dp"
+            android:layout_width="132px"
+            android:layout_height="60px"
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_left_selecter"
             android:gravity="center"
             android:text="出院指南"
             android:textColor="#ffffff"
-            android:textSize="16sp" />
+            android:textSize="18px" />
     </LinearLayout>
 
     <WebView
         android:id="@+id/webview_pub"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginBottom="34px"
+        android:layout_marginRight="34px"
+        android:layout_marginTop="34px" />
 </LinearLayout>
